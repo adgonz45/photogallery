@@ -8,63 +8,101 @@
     <title>TK Photography</title>
 </head>
 <body>
-    <header>TK Photography</header>
-   
-●	About
-●	Gallery
-●	Contact
-●	top
-About
-Hello! 
-I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world. 
-Gallery
-Here are some highlights of my work. The locations and year are in the caption. 
+    <header>
+        <h1>TK Photography</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#top">Top</a></li>
+            </ul>
+        </nav>
+    </header>
 
-Chile.png
-Chile, 2001
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>Hello!</p>
+            <p>I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my specialty and it’s taken me all over the world.</p>
+        </section>
 
-Guatemala.png
-Guatemala, 1997
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Here are some highlights of my work. The locations and year are in the caption.</p>
+        </section>
+        <div>
+            <figure>
+                <img src="images/Chile.png" alt="Chile beach during the sunset with boulders in front of and on the right of the water" width="420" height="282">
+                <figcaption>Chile, 2001</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Guatemala.png" alt="Landscape with purple flowers leading up to a dock and body of water with mountains in the background during dusk" width="420" height="280">
+                <figcaption>Guatemala, 1997</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Hawaii.png" alt="Hawaiian Island surrounded by water during a sunny day" width="421" height="281">
+                <figcaption>Hawaii, 2010</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Iran.png" alt="Barren landscape with red plants and mountains in the background" width="420" height="630">
+                <figcaption>Iran, 1999</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Ireland.png" alt="Green hills with trees" width="420" height="630">
+                <figcaption>Ireland, 2012</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Italy.png" alt="Lake with Mountain in the background and people canoeing" width="420" height="630">
+                <figcaption>Italy, 2015</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Moab-Desert.png" alt="Rocky Desert during sunset" width="420" height="281">
+                <figcaption>Moab Desert, 2020</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Rocky-Mountains.png" alt="Rocky mountains with snow" width="420" height="281">
+                <figcaption>Rocky Mountains, 2009</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Switzerland.png" alt="Mountains covered in snow" width="420" height="280">
+                <figcaption>Switzerland, 2014</figcaption>
+            </figure>
+            <figure>
+                <img src="images/UK.png" alt="green fields with hills" width="420" height="281">
+                <figcaption>UK, 2005</figcaption>
+            </figure>
+            <figure>
+                <img src="images/USA.png" alt="green fields with flowers" width="420" height="280">
+                <figcaption>USA, 2021</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Wyoming.png" alt="forest with mountains and lake" width="420" height="280">
+                <figcaption>Wyoming, 2021</figcaption>
+            </figure>
+        </div>
 
-Hawaii.png
-Hawaii, 2010
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Please fill out this form and I’ll connect with you soon.</p>
+            <form method="POST" target="_blank">
+                <label for="my-name">Name</label>
+                <input type="text" name="my-name" id="my-name" value="Your full name">
+               
+                <label for="my-email">Email</label>
+                <input type="email" name="my-email" id="my-email" value="Enter your email address">
+                
+                <label for="my-message">Message</label>
+                <input type="text" name="my-message" id="my-message" value="What can I help you with?">
 
-Iran.png
-Iran, 1999
-
-Ireland.png
-Ireland, 2012
-
-Italy.png
-Italy, 2015
-
-Moab-Desert.png
-Moab Desert, 2020
-
-Rocky-Mountains.png
-Rocky Mountains, 2009
-
-Switzerland.png
-Switzerland, 2014
-
-UK.png
-UK, 2005
-
-USA.png
-USA, 2021
-
-Wyoming.png
-Wyoming, 2021
-Contact
-Please fill out this form and I’ll connect with you soon.
-
-Your contact information
-Name (Your full name)
-Email (Enter your email address)
-Message (What can I help you with?)
-Submit
-
-Copyright 2021 TK Photography
+                <input type="submit" name="my-submit" id="my-submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    
+<footer>
+    <small>Copyright 2021 TK Photography</small>
+</footer>
 
 </body>
 </html>
