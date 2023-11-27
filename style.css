@@ -1,7 +1,8 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -11,38 +12,500 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
+article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-    display: block;
+	display: block;
 }
 body {
-    line-height: 1;
+	line-height: 1;
 }
 ol, ul {
-    list-style: none;
+	list-style: none;
 }
 blockquote, q {
-    quotes: none;
+	quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+	content: '';
+	content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
+
+
+html{
+    background-color: #000000;
+}
+
+body{
+    margin: 0 auto;
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+    padding: 10px;
+    width: 1300px;
+}
+
+main{
+    background-color: #ffffff;
+}
+
+h1{
+    padding: 10px;
+    color: #007d7b;
+    text-align: left;
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #ffffff;
+}
+
+
+
+nav ul{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: right;
+    margin: auto;
+    font-weight: bold;
+}
+nav a{
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+[href="#top"] {
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    border-radius:10px 0 0px 0px;
+    border-color: #ffffff;
+  }
+
+  h2{
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+  }
+
+  p{
+    font-size: 1.25em;
+    text-align: left;
+    padding: 10px;
+  }
+
+  div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding-left: 5px;
+  }
+
+  figcaption{
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    
+  }
+
+  .chile {
+    color: #ffffff;
+    text-align: center;
+    left: 25%;
+    bottom: 25%;
+  }
+
+  .guatemala {
+    color: #ffffff;
+    text-align: center;
+    left: 46%;
+    top: 48%;
+  }
+
+  .hawaii {
+    color: #ffffff;
+    text-align: center;
+    right: 25%;
+    bottom: 25%;
+  }
+ 
+  .iran {
+    color: #000000;
+    text-align: center;
+    left: 25%;
+    bottom: 17%;
+  }
+
+  .ireland {
+    color: #000000;
+    text-align: center;
+    left: 47%;
+    bottom: 17%;
+  }
+
+  .italy {
+    color: #000000;
+    text-align: center;
+    right: 25%;
+    bottom: -45%;
+  }
+
+  .moab {
+    color: #ffffff;
+    text-align: center;
+    left: 22%;
+    bottom: -77%;
+  }
+
+  .rocky-mount {
+    color: #000000;
+    text-align: center;
+    left: 44%;
+    bottom: -51%;
+  }
+
+  .switz {
+    color: #000000;
+    text-align: center;
+    right: 23.5%;
+    bottom: -51%;
+  }
+
+  .uk{
+    color: #000000;
+    text-align: center;
+    left: 24.5%;
+    bottom: -83%;
+  }
+
+  .us{
+    color: #000000;
+    text-align: center;
+    left: 47.7%;
+    bottom: -83%;
+  }
+
+  .wy{
+    color: #ffffff;
+    text-align: center;
+   right: 24%;
+    bottom: -83%;
+  }
+
+  figure:last-of-type{
+    padding-bottom: 10px;
+  }
+
+
+ 
+#contact, #contact p{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+input, label{
+    font-size: 1em;
+    font-weight: bold;
+    color:#007d7b;
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+input{
+    padding: 8px;
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+label{
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+input[type=submit]{
+    width: 50%;
+    background-color: #007d7b;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+
+}
+footer{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width:880px) {
+
+
+
+ body{
+    margin: 0 auto;
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+    padding: 10px;
+    width: 880px;
+    
+}
+    
+    
+
+nav ul{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-weight: bold;
+}
+
+div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding-left: 5px;
+  }
+
+  .chile {
+    color: #ffffff;
+    text-align: center;
+    left: 35%;
+    bottom: 25%;
+  }
+
+  .guatemala {
+    color: #ffffff;
+    text-align: center;
+    left: 57%;
+    top: 48%;
+  }
+
+  .hawaii {
+    color: #ffffff;
+    text-align: center;
+    left: 3%;
+    bottom: -7%;
+  }
+ 
+  .iran {
+    color: #000000;
+    text-align: center;
+    right: 3%;
+    bottom: 18%;
+  }
+
+  .ireland {
+    color: #000000;
+    text-align: center;
+    left: 35%;
+    bottom: -53%;
+  }
+
+  .italy {
+    color: #000000;
+    text-align: center;
+    right: 37%;
+    bottom: -115%;
+  }
+
+  .moab {
+    color: #ffffff;
+    text-align: center;
+    left: 33.5%;
+    bottom: -147%;
+  }
+
+  .rocky-mount {
+    color: #000000;
+    text-align: center;
+    right: 22%;
+    bottom: -120%;
+  }
+
+  .switz {
+    color: #000000;
+    text-align: center;
+    left: -0.8%;
+    bottom: -153%;
+  }
+
+  .uk{
+    color: #000000;
+    text-align: center;
+    left: 59%;
+    bottom: -153%;
+  }
+
+  .us{
+    color: #000000;
+    text-align: center;
+    left: 36.5%;
+    bottom: -185%;
+  }
+
+  .wy{
+    color: #ffffff;
+    text-align: center;
+    left: 46%;
+    bottom: -185%;
+  }
+
+
+}
+
+@media screen and (min-width:485px) {
+   
+    body{
+        margin: 0 auto;
+        font-family: 'Arial', 'Helvetica', 'sans-serif';
+        padding: 10px;
+        width: 485px;
+        
+    }
+        
+        
+    
+    nav ul{
+        padding: 10px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-weight: bold;
+    }
+    
+    div{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+        padding-left: 33px;
+      }
+    
+      .chile {
+        color: #ffffff;
+        text-align: center;
+        left: 46.5%;
+        bottom: 18%;
+      }
+    
+      .guatemala {
+        color: #ffffff;
+        text-align: center;
+        left: 44.5%;
+        top: 87%;
+      }
+    
+      .hawaii {
+        color: #ffffff;
+        text-align: center;
+        left: 22.5%;
+        bottom: -45%;
+      }
+     
+      .iran {
+        color: #000000;
+        text-align: center;
+        left: -1.5%;
+        bottom: -52%;
+      }
+    
+      .ireland {
+        color: #000000;
+        text-align: center;
+        right: 35%;
+        bottom: -123%;
+      }
+    
+      .italy {
+        color: #000000;
+        text-align: center;
+        right: 48%;
+        bottom: -254%;
+      }
+    
+      .moab {
+        color: #ffffff;
+        text-align: center;
+        left: 45%;
+        bottom: -287%;
+      }
+    
+      .rocky-mount {
+        color: #000000;
+        text-align: center;
+        right: 45%;
+        bottom: -293%;
+      }
+    
+      .switz {
+        color: #000000;
+        text-align: center;
+        left: 24.5%;
+        bottom: -324%;
+      }
+    
+      .uk{
+        color: #000000;
+        text-align: center;
+        left: 47.5%;
+        bottom: -356%;
+      }
+    
+      .us{
+        color: #000000;
+        text-align: center;
+        left: 47.5%;
+        bottom: -388%;
+      }
+    
+      .wy{
+        color: #ffffff;
+        text-align: center;
+        left: 23.5%;
+        bottom: -420%;
+      }
+    
+      footer{
+        color: #ffffff;
+        text-align: center;
+        font-size: 1em;
+        padding: 30px;
+        margin: auto;
+        text-transform: uppercase;
+    }
+
+  
+}
