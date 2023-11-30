@@ -507,5 +507,9 @@ div{
         text-transform: uppercase;
     }
 
+    nav h2{
+      display: none;
+    }
+
   
 }
